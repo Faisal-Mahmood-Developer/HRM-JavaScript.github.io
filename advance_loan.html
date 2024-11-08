@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="./style.css">
+  <title>Advance_Loan</title>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div style="padding: 14% ">
+      <img src="./images/cache-cloudFont334.png" style="width: 90%;">
+    </div>
+    <!-- <i class="fa fa-fw fa-home"></i> -->
+    <a class="active" href="./home.html">Home</a>
+    <a href="./Emp_About.html">About</a>
+
+    <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Departments </a>
+    <li class="dropdown-menu">
+      <a class="dropdown-item" href="">Administration</a>
+      <a class="dropdown-item" href="./soft_dep.html">Software Department</a>
+      <a class="dropdown-item" href="./qa_dep.html">QA Department</a>
+      <a class="dropdown-item" href="./oracle_data.html">DB Department</a>
+      <a class="dropdown-item" href="./devOps.html">DevOps Department</a>
+    </li>
+
+    <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">CC Employees </a>
+    <li class="dropdown-menu">
+      <a class="dropdown-item" href="./emp_personal_Information.html">Add Emp Data</a>
+      <a class="dropdown-item" href="./Employees.html">Emp Info</a>
+      <a class="dropdown-item" href="./Emp_Cards.html">Emp Cards</a>
+    </li>
+    <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Payroll System </a>
+    <li class="dropdown-menu">
+      <a class="dropdown-item" href="https://alfalahtransact.bankalfalah.com/SSO_FW/MasterPage/Home.aspx">Transation</a>
+      <a class="dropdown-item" href="./salary.html">Salary Slips</a>
+      <a class="dropdown-item" href="./medical_Allowance.html">Medical Allowance</a>
+      <a class="dropdown-item" href="./advance_loan.html">Advance Loan</a>
+      <a class="dropdown-item" href="./myCaal.html">Calculate</a>
+    </li>
+    <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Leaves Chart </a>
+    <li class="dropdown-menu">
+      <a class="dropdown-item" href="./CC Attendance.html">Attendence Sheet</a>
+      <a class="dropdown-item" href="./Emp_leaves.html">Leaves</a>
+    </li>
+    <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Office Glossary </a>
+    <li class="dropdown-menu">
+      <a class="dropdown-item" href="./expenses.html">Office Empenses</a>
+      <a class="dropdown-item" href="./Accessories.html">Office Accessories</a>
+      <a class="dropdown-item" href=""></a>
+      <a class="dropdown-item" href=""></a>
+      <!-- <hr style="border-bottom: 2px orange;"> -->
+    </li>
+    <a href="#">Emails</a>
+    <!-- <a href="https://mail.google.com/mail/u/1/#inbox">CC Academy</a> -->
+    <a href="">Entertainment</a>
+
+    <div class="mar_log text-center ">
+      <button type="button" class="btn log_out " onclick="myLogout()">Logout</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container bg-white" style="border: none;">
+    <h1 class="text-center cache-cloud">CACHE CLOUD HRM</h1>
+    <br>
+    <p>Director</p>
+    <p>Ali Bajwa</p>
+    <p>HR</p>
+    <p>Faisal Mahmood</p>
+  </div>
+  <div class="row">
+    <div class="col-75">
+      <div class="container mt-5" style="padding: 70px;">
+        <h3 class="text-center mt-5 mb-4">Advance Loan From</h3>
+        <form>
+          <div class="row">
+            <div class="col-50">
+              <h3></h3>
+              <label for="fname"><i class="fa fa-user"></i> First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Enter Name" class="form-control">
+              <label for="email"><i class="fa fa-envelope"></i>Last Name</label>
+              <input type="text" id="lname" name="" placeholder="Enter last name" class="form-control">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Email</label>
+              <input type="text" id="email" name="address" placeholder="Enter Email" class="form-control">
+              <label for="city"><i class="fa fa-institution"></i> Bank Name</label>
+              <input type="number" id="bank" name="city" placeholder="Bank Name" class="form-control m_files">
+              <label for="ccnum">Bank Account Number</label>
+              <input type="number" id="ccnum" name="cardnumber" placeholder="Enter Account Number"
+                class="form-control m_files">
+
+            </div>
+            <div class="col-50">
+              <h3></h3>
+
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Purpose of Loan</label>
+              <textarea class="form-control" id="loan" cols="66" rows="7"
+                placeholder="Type the puspose of loan"></textarea>
+
+              <br>
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">Date</label>
+                  <input type="date" id="date" name="state" placeholder="Enter Date" class="form-control m_files">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Month</label>
+                  <input type="text" id="zip" name="zip" placeholder="Enter Month" class="form-control">
+                </div>
+              </div>
+
+
+              <!-- <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September"> -->
+              <div class="row mt-4">
+                <div class="col-6">
+                  <label>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    Choose photo
+                  </label>
+                  <input type="file" id="upload">
+                </div>
+                <div class="col-6">
+                  <label>
+                    QR Scanner</label>
+                  <input type="file" id="upload2">
+                </div>
+              </div>
+            </div>
+          </div>
+          <label>
+            <!-- <button type="button" onclick="myButton()" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#myModal">
+
+              Open to Continue
+            </button> -->
+
+            <button type="button" class="btnA btn-success" onclick="myButton()">Continue to Add</button>
+
+        </form>
+        <br>
+        <br>
+        <br>
+      </div>
+
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Advance Loan Information</h4>
+              <button type="button" class="btn-close " data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-75">
+                  <div class="container " style="padding: 40px;">
+                    <form>
+                      <div class="row">
+                        <div class="col-50 mt-3">
+                          <h3 class="mt-5"></h3>
+                          <label for="fname"><i class="fa fa-user"></i> First Name</label>
+                          <p id="my_Fname" class="myInput_Style form-control"></p>
+                          <label for="email"><i class="fa fa-envelope"></i>Last Name</label>
+                          <p id="my_lname" class="myInput_Style form-control"></p>
+                          <label for="adr"><i class="fa fa-address-card-o"></i> Email</label>
+                          <p id="my_email" class="myInput_Style form-control"></p>
+                          <label for="city"><i class="fa fa-institution"></i> Bank Name</label>
+                          <p id="my_bankName" class="myInput_Style form-control"></p>
+                          <label for="ccnum">Bank Account Number</label>
+                          <p id="my_Account" class="myInput_Style form-control"></p>
+                        
+                        </div>
+                        <div class="col-50">
+                          <div class="icon-container">
+                          </div>
+
+
+
+                          <div class="row">
+                            <div class="col-4">
+
+                              <div class="display1 "></div>
+                            </div>
+                            <div class="col-4">
+
+                              <div class="display1 "></div>
+                            </div>
+                          </div>
+                          <label for="cname">Purpose of Loan</label>
+                          <p id="my_purpose" class="form-control"
+                            style="border: 2px solid black; width: 80%; height: 200px;"></p>
+
+
+<div class="row">
+  <div class="col-50">
+    <label for="state">Date</label>
+    <p id="my_Date" class="myInput_Style1 form-control"></p>
+  </div>
+  <div class="col-50">
+    <label for="zip">Month</label>
+    <p id="my_Zip" class="myInput_Style1 form-control"></p>
+  </div>
+</div>
+
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn modal_diss_btn" data-bs-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- start footer -->
+      <!-- The other modal for Adding  Emp -->
+<br>
+      <div class="container mb-4">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Name</th>
+              <th>View</th>
+            </tr>
+          </thead>
+          <tbody id="view1">
+
+          </tbody>
+        </table>
+      </div>
+
+      <script>
+        function myButton() {
+
+          const fname = document.getElementById('fname').value;
+          const lname = document.getElementById('lname').value;
+          const email = document.getElementById('email').value;
+          const bank = document.getElementById('bank').value;
+          const date = document.getElementById('date').value;
+          const zip = document.getElementById('zip').value;
+          const loan = document.getElementById('loan').value;
+          const ccnum = document.getElementById('ccnum').value;
+          // const expyear = document.getElementById('expyear').value;
+          // const cvv = document.getElementById('cvv').value;
+          const mybtnB = `<i class="fa-sharp fa-regular fa-eye" data-bs-toggle="modal" data-bs-target="#myModal"></i>`
+
+          my_Fname.innerHTML = fname;
+          my_lname.innerHTML = lname;
+          my_email.innerHTML = email;
+          my_bankName.innerHTML = bank;
+          my_Date.innerHTML = date;
+          my_Zip.innerHTML = zip;
+          my_purpose.innerHTML = loan;
+          my_Account.innerHTML = ccnum;
+
+
+
+          view1.innerHTML = view1.innerHTML + `
+                                        <tr>
+                                            <td>${date}</td>
+                                            <td>${fname}</td>
+                                            <td>${mybtnB}</td>
+
+                                            </tr>`
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+        // javascript for logout function
+        // Check if the user is logged in
+if (!localStorage.getItem('userLoggedIn')) {
+    // If not logged in, redirect to login page
+    window.location.href = "./index.html";
+}
+
+function myLogout () {
+    // Remove login state from localStorage
+    localStorage.removeItem('userLoggedIn');
+    // Redirect to login page
+    window.location.href = "./index.html";
+}
+
+
+// the javaScript for the next table in which add and show the name 
+
+      </script>
+</body>
+
+</html>

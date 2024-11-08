@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emp_personal_Informatioin</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div style="padding: 14% ">
+            <img src="./images/cache-cloudFont334.png" style="width: 90%;">
+        </div>
+        <!-- <i class="fa fa-fw fa-home"></i> -->
+        <a class="active" href="./home.html">Home</a>
+        <a href="./Emp_About.html">About</a>
+
+        <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Departments </a>
+        <li class="dropdown-menu">
+            <a class="dropdown-item" href="">Administration</a>
+            <a class="dropdown-item" href="./soft_dep.html">Software Department</a>
+            <a class="dropdown-item" href="./qa_dep.html">QA Department</a>
+            <a class="dropdown-item" href="./oracle_data.html">DB Department</a>
+            <a class="dropdown-item" href="./devOps.html">DevOps Department</a>
+        </li>
+
+
+        <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">CC Employees </a>
+        <li class="dropdown-menu">
+            <a class="dropdown-item" href="./emp_personal_Information.html">Add Emp Data</a>
+            <a class="dropdown-item" href="./Employees.html">Emp Info</a>
+            <a class="dropdown-item" href="./Emp_Cards.html">Emp Cards</a>
+        </li>
+        <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Payroll System </a>
+        <li class="dropdown-menu">
+            <a class="dropdown-item"
+                href="https://alfalahtransact.bankalfalah.com/SSO_FW/MasterPage/Home.aspx">Transation</a>
+            <a class="dropdown-item" href="./salary.html">Salary Slips</a>
+            <a class="dropdown-item" href="./medical_Allowance.html">Medical Allowance</a>
+            <a class="dropdown-item" href="./advance_loan.html">Advance Loan</a>
+            <a class="dropdown-item" href="./myCaal.html">Calculate</a>
+        </li>
+        <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Leaves Chart </a>
+        <li class="dropdown-menu">
+            <a class="dropdown-item" href="./CC Attendance.html">Attendence Sheet</a>
+            <a class="dropdown-item" href="./Emp_leaves.html">Leaves</a>
+        </li>
+        <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Office Glossary </a>
+        <li class="dropdown-menu">
+            <a class="dropdown-item" href="./expenses.html">Office Empenses</a>
+            <a class="dropdown-item" href="./Accessories.html">Office Accessories</a>
+            <a class="dropdown-item" href=""></a>
+            <a class="dropdown-item" href=""></a>
+            <!-- <hr style="border-bottom: 2px orange;"> -->
+        </li>
+        <a href="#">Emails</a>
+        <!-- <a href="https://mail.google.com/mail/u/1/#inbox">CC Academy</a> -->
+        <a href="">Entertainment</a>
+
+        <div class="mar_log text-center ">
+            <button type="button" class="btn log_out " onclick="myLogout()">Logout</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container bg-white" style="border: none;">
+        <h1 class="text-center cache-cloud">CACHE CLOUD HRM</h1>
+        <br>
+        <p>Director</p>
+        <p>Ali Bajwa</p>
+        <p>HR</p>
+        <p>Faisal Mahmood</p>
+    </div>
+    <div class="container mb-5" style=' background-color: #f2f2f2;'>
+        <div class="row">
+            <div class="col"> </div>
+            <div class="col-8">
+                <!-- <div class="row  lahore"> -->
+                <!-- <div class="col-75"> -->
+                <div class="input-container">
+                    <h3 class="text-center  mt-5">Employees Data
+                    </h3>
+                
+                </div>
+                <form action="">
+
+               
+                <div class="row">
+                    <div class="col-50">
+                        <label for="fname"><i class="fa fa-user"></i> Full Name:</label>
+                        <input type="text" id="name" name="firstname" placeholder="Enter Name" class="form-control">
+                        <label for="fname"><i class="fa fa-user"></i> Father Name:</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Enter Name" class="form-control">
+                        <label for="email"><i class="fa fa-envelope"></i> Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter emp email" class="form-control">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address:</label>
+                        <input type="text" id="adress" name="address" placeholder="Enter Address" class="form-control">
+                        <label for="city"><i class="fa fa-institution"></i> City:</label>
+                        <input type="text" id="city" name="city" placeholder="Enter emp city" class="form-control">
+                        <label for="city"><i class="fa fa-institution"></i> Relatioinship:</label>
+                        <input type="text" id="myRelation" name="city" placeholder="Enter emp city"
+                            class="form-control">
+
+                    </div>
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">Contact No:</label>
+                                <input type="number" id="contact" min="0" name="state" placeholder="Enter contact no"
+                                    class="form-control m_files">
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Emergency Contact:</label>
+                                <input type="number" id="emr_con" name="zip " placeholder="Enter emergency contact no"
+                                    min="0" class="form-control m_files">
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-50">
+                                <label for="state">Relegion:</label>
+                                <input type="text" id="Relegion" name="state" placeholder="Enter Relegion"
+                                    class="form-control">
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Blood Group:</label>
+                                <input type="text" id="blood" name="zip" placeholder="Enter blood group"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">Basic Salary:</label>
+                                <input type="number" id="salary" name="state" placeholder="Enter salary" min="0"
+                                    class="form-control m_files">
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Cast:</label>
+                                <input type="text" id="cast" name="zip" placeholder="Enter Cast" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">Date of Birth:</label>
+                                <input type="date" id="dob" name="state" placeholder="Enter date of birth" min="0"
+                                    class="form-control m_files">
+                            </div>
+                            <!-- <div class="col-50">
+                                        <label for="zip">Relatioin Ship:</label>
+                                        <input type="text" id="my-demo1" placeholder="Enter relatioinship"
+                                            class="form-control">
+                                    </div> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Joining Date:</label>
+                                <input type="date" id="joining" name="expyear" placeholder="Enter joining date"
+                                    class="form-control m_files">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">Designation:</label>
+                                <input type="text" id="Designation" name="cvv" placeholder="Enter Designation"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md">
+                                <label>
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                    Choose photo
+                                </label>
+                                <input type="file" id="upload" multiple>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+                <div class="text-center">
+
+                    <i class="fa-sharp fa-solid fa-plus mt-3" onclick="myName()"></i>
+                </div>
+                <!-- </div> -->
+                <br>
+                <!-- View details of all cc emp modal  -->
+                <div class="text-center">
+                    <button type="button" class="btn modal_diss_btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                        View
+                    </button>
+                </div>
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Cache Cloud Employees</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <!-- The other modal for Adding  Emp -->
+
+                                <div class="container mb-4">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Name</th>
+                                                <th>View</th>
+                                                <th>Edit</th>
+                                                <th>Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="view">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <!-- A modal of input fields  -->
+        <!-- The Modal -->
+        <!-- <div class="modal" id="myModalBBB">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+  
+       
+        <div class="modal-header">
+          <h4 class="modal-title">Add Emp Information</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+
+        <div class="modal-body">
+            <div class="container" style=' background-color: #f2f2f2;'>
+                <div class="row">
+                    <div class="col-sm-2"> </div>
+                    <div class="col-sm-8">
+                        <div class="row  lahore">
+                            <div class="col-75">
+                             
+                                <div class="input-container">
+                                    <img src="./images/cache-cloudFont334.png" class="myImage">
+                                    <h3 class="text-center  mt-2">Employees Data
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col-8"></div>
+                                        <div class="col-4 " style="display: flex;">
+        
+                                            <input class="example" type="text" placeholder="Search.." name="search">
+                                            <button type="submit" class="search_bar"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                        <input type="text" id="name" name="firstname" placeholder="Enter Name">
+                                        <label for="fname"><i class="fa fa-user"></i> Father Name</label>
+                                        <input type="text" id="fname" name="firstname" placeholder="Enter Name">
+                                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                        <input type="text" id="email" name="email" placeholder="Enter emp email">
+                                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                        <input type="text" id="adress" name="address" placeholder="Enter Address">
+                                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                                        <input type="text" id="city" name="city" placeholder="Enter emp city">
+                                    </div>
+                                    <div class="col-50">
+                                        <h3></h3>
+        
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <label for="state">Contact No</label>
+                                                <input type="text" id="contact" name="state" placeholder="Enter contact no">
+                                            </div>
+                                            <div class="col-50">
+                                                <label for="zip">Emergency Contact No</label>
+                                                <input type="text" id="emr_con" name="zip"
+                                                    placeholder="Enter emergency contact no">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <label for="state">Relegion</label>
+                                                <input type="text" id="Relegion" name="state" placeholder="Enter Relegion">
+                                            </div>
+                                            <div class="col-50">
+                                                <label for="zip">Blood Group</label>
+                                                <input type="text" id="blood" name="zip" placeholder="Enter blood group">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <label for="state">Basic Salary</label>
+                                                <input type="text" id="salary" name="state" placeholder="Enter salary">
+                                            </div>
+                                            <div class="col-50">
+                                                <label for="zip">Cast</label>
+                                                <input type="text" id="cast" name="zip" placeholder="Enter Cast">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <label for="state">Date of Birth</label>
+                                                <input type="text" id="dob" name="state" placeholder="Enter date of birth">
+                                            </div>
+                                            <div class="col-50">
+                                                <label for="zip">Relatioin Ship</label>
+                                                <input type="text" id="my-demo1" placeholder="Enter relatioinship">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <label for="expyear">Joining Date</label>
+                                                <input type="text" id="joining" name="expyear" placeholder="Enter joining date">
+                                            </div>
+                                            <div class="col-50">
+                                                <label for="cvv">Designation</label>
+                                                <input type="text" id="Designation" name="cvv" placeholder="Enter Designation">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btnA btn-success"  data-bs-dismiss="modal" onclick="myName()" >Continue to Add</button>
+                                </form>
+                            </div>
+                            <br>
+        
+                        </div>
+                        <div class="col-sm-2"> </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+        <!-- Now i put the modal for the date and modal is open after click the button -->
+        <!-- Button to Open the Modal -->
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal123">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title ">Employees Information</h4>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+
+
+                        <!-- now second step for the input -->
+                        <div class="row">
+                            <div class="col-75">
+                                <div style="margin-left: 5%;" class="mt-5">
+                                    <div class="row ">
+                                        <div class="col-50 mt-5">
+                                            <label for="fname"><i class="fa fa-user"></i> <b>Full Name</b> </label>
+                                            <p id="name1" class="myInput_Style form-control"></p>
+                                            <label for="fname"><i class="fa fa-user"></i><b>Father Name</b> </label>
+                                            <p id="fname1" class="myInput_Style form-control"></p>
+                                            <label for="email"><i class="fa fa-envelope"></i><b>Email</b> </label>
+                                            <p id="email1" class="myInput_Style form-control"></p>
+                                            <label for="adr"><i class="fa fa-address-card-o"></i><b>Address</b> </label>
+                                            <p id="adress1" class="myInput_Style form-control"></p>
+                                            <label for="city"><i class="fa fa-institution"></i><b>City</b> </label>
+                                            <p id="city1" class="myInput_Style form-control"></p>
+                                            <label for="city"><i class="fa fa-institution"></i><b>Relatioinship</b>
+                                            </label>
+                                            <p id="myRelation1" class="myInput_Style form-control"></p>
+                                        </div>
+
+                                        <!-- add images and qr code scanner  -->
+                                        <div class="col-50">
+                                            <div class="row">
+                                                <div class="col-50">
+
+                                                    <div class="display1 "></div>
+                                                </div>
+                                                <div class="col-50">
+                                                    <div class="display2 img-fluid"></div>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-50">
+                                                    <label for="state"><b>Contact No</b></label>
+                                                    <p id="contact1" class="myInput_Style1 form-control"></p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <label for="zip"><b>Emergency Contact No</b></label>
+                                                    <p id="emr_contact1" class="myInput_Style1 form-control"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-50">
+                                                    <label for="state"><b>Relegion</b></label>
+                                                    <p id="relegion1" class="myInput_Style1 form-control"></p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <label for="zip"><b>Blood Group</b></label>
+                                                    <p id="blood1" class="myInput_Style1 form-control"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-50">
+                                                    <label for="state"><b>Basic Salary</b></label>
+                                                    <p id="salary1" class="myInput_Style1 form-control"></p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <label for="zip"><b>Cast</b></label>
+                                                    <p id="cast12" class="myInput_Style1 form-control"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-50">
+                                                    <label for="state"><b>Date of Birth</b></label>
+                                                    <p id="dob1" class="myInput_Style1 form-control"></p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <label for="expyear"><b>Joining Date</b></label>
+                                                    <p id="joining1" class="myInput_Style1 form-control"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-50">
+                                                    <label for="cvv"><b>Designation</b></label>
+                                                    <p id="designation1" class="myInput_Style1 form-control"></p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <button class="btn btn-primary mt-5">Edit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#myModal">
+                                Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!-- Modal footer -->
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- next function for update or edit information of cache cloud employees -->
+
+  
+</div>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal12345">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title ">Employees Information</h4>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+
+
+
+                <!-- now second step for the input -->
+                <div class="row">
+                    <div class="col-75">
+                        <div style="margin-left: 5%;" class="mt-5">
+                            <div class="row ">
+                                <div class="col-50 mt-5">
+                                    <label for="fname"><i class="fa fa-user"></i> <b>Full Name</b> </label>
+                                    <p id="name1" class="myInput_Style form-control"></p>
+                                    <label for="fname"><i class="fa fa-user"></i><b>Father Name</b> </label>
+                                    <p id="fname1" class="myInput_Style form-control"></p>
+                                    <label for="email"><i class="fa fa-envelope"></i><b>Email</b> </label>
+                                    <p id="email1" class="myInput_Style form-control"></p>
+                                    <label for="adr"><i class="fa fa-address-card-o"></i><b>Address</b> </label>
+                                    <p id="adress1" class="myInput_Style form-control"></p>
+                                    <label for="city"><i class="fa fa-institution"></i><b>City</b> </label>
+                                    <p id="city1" class="myInput_Style form-control"></p>
+                                    <label for="city"><i class="fa fa-institution"></i><b>Relatioinship</b>
+                                    </label>
+                                    <p id="myRelation1" class="myInput_Style form-control"></p>
+                                </div>
+
+                                <!-- add images and qr code scanner  -->
+                                <div class="col-50">
+                                    <div class="row">
+                                        <div class="col-50">
+
+                                            <div class="display1 "></div>
+                                        </div>
+                                        <div class="col-50">
+                                            <div class="display2 img-fluid"></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="state"><b>Contact No</b></label>
+                                            <p id="contact1" class="myInput_Style1 form-control"></p>
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="zip"><b>Emergency Contact No</b></label>
+                                            <p id="emr_contact1" class="myInput_Style1 form-control"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="state"><b>Relegion</b></label>
+                                            <p id="relegion1" class="myInput_Style1 form-control"></p>
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="zip"><b>Blood Group</b></label>
+                                            <p id="blood1" class="myInput_Style1 form-control"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="state"><b>Basic Salary</b></label>
+                                            <p id="salary1" class="myInput_Style1 form-control"></p>
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="zip"><b>Cast</b></label>
+                                            <p id="cast12" class="myInput_Style1 form-control"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="state"><b>Date of Birth</b></label>
+                                            <p id="dob1" class="myInput_Style1 form-control"></p>
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="expyear"><b>Joining Date</b></label>
+                                            <p id="joining1" class="myInput_Style1 form-control"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="cvv"><b>Designation</b></label>
+                                            <p id="designation1" class="myInput_Style1 form-control"></p>
+                                        </div>
+                                        <!-- <div class="col-50">
+                                            <button class="btn btn-primary mt-5">Edit</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                   
+                  
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- Modal footer -->
+    </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <input type="submit" value="Save">
+      </div>
+
+    </div>
+  </div>
+        <!-- Here is the code for the JavaScript starting -->
+
+        <script>
+            function myName() {
+                const fullName = document.getElementById('name').value;
+                const fName = document.getElementById('fname').value;
+                const myEmail = document.getElementById('email').value;
+                const myAdress = document.getElementById('adress').value;
+                const myCity = document.getElementById('city').value;
+                const myContact = document.getElementById('contact').value;
+                const emr_Contact = document.getElementById('emr_con').value;
+                const myRelegion = document.getElementById('Relegion').value;
+                const myBlood = document.getElementById('blood').value;
+                const myCast = document.getElementById('cast').value;
+                const myDob = document.getElementById('dob').value;
+                const myRelation = document.getElementById('myRelation').value;
+                const myJoining = document.getElementById('joining').value;
+                const myDesignation = document.getElementById('Designation').value;
+                const mySalary = document.getElementById('salary').value;
+                const Edit_able = `<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal12345">
+    Edit 
+  </button>`
+                const mybtnA = ` <i class="fa-sharp fa-regular fa-eye"  data-bs-toggle="modal" data-bs-target="#myModal123"></i>
+                
+                
+`
+          
+                name1.innerHTML = fullName;
+                fname1.innerHTML = fName;
+                email1.innerHTML = myEmail;
+                adress1.innerHTML = myAdress;
+                city1.innerHTML = myCity;
+                contact1.innerHTML = myContact;
+                relegion1.innerHTML = myRelegion;
+                blood1.innerHTML = myBlood;
+                cast12.innerHTML = myCast;
+                dob1.innerHTML = myDob;
+                myRelation1.innerHTML = myRelation;
+                joining1.innerHTML = myJoining;
+                designation1.innerHTML = myDesignation;
+                salary1.innerHTML = mySalary;
+                emr_contact1.innerHTML = emr_Contact;
+
+                view.innerHTML = view.innerHTML + `
+                                        <tr>
+                                            <td>${myJoining}</td>
+                                            <td>${fullName}</td>
+                                            <td>${mybtnA}</td>
+                                            <td>${Edit_able}</td>
+                                            <td><button class='btn btn-danger'>Delete</button></td>
+
+                                            </tr>`
+
+
+
+                // javascript for the picture and qr scanner code 
+
+
+                const display1 = document.querySelector(".display1");
+                // const display2 = document.querySelector(".display2");
+
+                const input = document.querySelector("#upload");
+                let img = document.querySelector("img");
+                let reader = new FileReader();
+                reader.readAsDataURL(input.files[0]);
+                reader.addEventListener("load", () => {
+                    display1.innerHTML = `<img class='img-fluid' src=${reader.result} alt=''/>`;
+                    // display2.innerHTML = `<img class='img-fluid' src=${reader.result} alt=''/>`;
+                });
+
+            };
+            // javascript for logout function
+          // Check if the user is logged in
+if (!localStorage.getItem('userLoggedIn')) {
+    // If not logged in, redirect to login page
+    window.location.href = "./index.html";
+}
+
+function myLogout () {
+    // Remove login state from localStorage
+    localStorage.removeItem('userLoggedIn');
+    // Redirect to login page
+    window.location.href = "./index.html";
+}
+
+
+
+        </script>
+</body>
+
+</html>

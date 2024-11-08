@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Home</title>
+    <style>
+        .myWidth{
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div style="padding: 14% ">
+            <img src="./images/cache-cloudFont334.png" style="width: 90%;">
+        </div>
+        <!-- <i class="fa fa-fw fa-home"></i> -->
+        <a class="active" href="./home.html">Home</a>
+        <a href="./Emp_About.html">About</a>
+
+        <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Departments </a>
+        <li class="dropdown-menu">
+            <a class="dropdown-item" href="">Administration</a>
+            <a class="dropdown-item" href="./soft_dep.html">Software Department</a>
+            <a class="dropdown-item" href="./qa_dep.html">QA Department</a>
+            <a class="dropdown-item" href="./oracle_data.html">DB Department</a>
+            <a class="dropdown-item" href="./devOps.html">DevOps Department</a>
+        </li>
+
+
+        <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">CC Employees </a>
+        <li class="dropdown-menu">
+            <a class="dropdown-item" href="./emp_personal_Information.html">Add Emp Data</a>
+            <a class="dropdown-item" href="./Employees.html">Emp Info</a>
+            <a class="dropdown-item" href="./Emp_Cards.html">Emp Cards</a>
+        </li>
+        <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Payroll System </a>
+        <li class="dropdown-menu">
+            <a class="dropdown-item"
+                href="#">Transaction</a>
+            <a class="dropdown-item" href="./salary.html">Salary Slips</a>
+            <a class="dropdown-item" href="./medical_Allowance.html">Medical Allowance</a>
+            <a class="dropdown-item" href="./advance_loan.html">Advance Loan</a>
+            <a class="dropdown-item" href="./myCaal.html">Calculate</a>
+        </li>
+        <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Leaves Chart </a>
+        <li class="dropdown-menu">
+            <a class="dropdown-item" href="./CC Attendance.html">Attendence Sheet</a>
+            <a class="dropdown-item" href="./Emp_leaves.html">Leaves</a>
+        </li>
+        <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Office Glossary </a>
+        <li class="dropdown-menu">
+            <a class="dropdown-item" href="./expenses.html">Office Empenses</a>
+            <a class="dropdown-item" href="./Accessories.html">Office Accessories</a>
+            <a class="dropdown-item" href=""></a>
+            <a class="dropdown-item" href=""></a>
+            <!-- <hr style="border-bottom: 2px orange;"> -->
+        </li>
+        <a href="">Emails</a>
+        <!-- <a href="https://mail.google.com/mail/u/1/#inbox">CC Academy</a> -->
+        <a href="">Entertainment</a>
+
+        <div class="mar_log text-center ">
+            <button type="button" class="btn log_out " onclick="myLogout()">Logout</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container bg-white" style="border: none;">
+        <h1 class="text-center cache-cloud">CACHE CLOUD HRM</h1>
+        <br>
+        <p>Director</p>
+        <p>Ali Bajwa</p>
+        <p>HR</p>
+        <p>Faisal Mahmood</p>
+    </div>
+
+
+
+    <div class="container mb-5" style=' background-color: #f2f2f2;'>
+        <div class="row">
+            <div class="col-sm-2"> </div>
+            <div class="col-sm-8">
+                <div class="row  lahore">
+                    <div class="col-75">
+                        <!-- <div class="container"> -->
+                        <!-- <form> -->
+                        <div class="input-container">
+                            <!-- <img src="./images/cache-cloudFont334.png" class="myImage "> -->
+                            <h3 class="text-center" style="font-size: 30px; color: black;">Cache-Cloud Employees
+                                Gadgets Details
+                            </h3>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-50">
+                                <label for="fname"><i class="fa fa-user"></i> Date</label>
+                                <input type="date" id="myFrist_Input" name="firstname" placeholder="Enter Date">
+                                <label for="fname" class="mt-4"><i class="fa fa-user"></i>Name</label>
+                                <input type="text" id="ID_1" name="firstname" placeholder="Enter Name"
+                                    class="form-control">
+                                <label for="email"><i class="fa fa-envelope"></i> Department</label>
+                                <input type="text" id="dep_1" name="email" placeholder="Enter emp email"
+                                    class="form-control">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> System Manufacturer</label>
+                                <input type="text" id="sys_Man" name="address" placeholder="Enter Address"
+                                    class="form-control">
+                                <label for="city"><i class="fa fa-institution"></i> System Model</label>
+                                <input type="text" id="sys_Model" name="city" placeholder="Enter emp city"
+                                    class="form-control">
+                            </div>
+                            <div class="col-50 mt-3">
+                                <br>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">Monitor</label>
+                                        <input type="text" id="my_Monitor" name="state" placeholder="Enter contact no"
+                                            class="form-control">
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">Headfone</label>
+                                        <input type="text" id="myHeadfone" name="state" placeholder="Enter Relegion"
+                                            class="form-control">
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">Mouse</label>
+                                        <input type="text" id="mouse_1" name="state" placeholder="Enter salary"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="zip">External Keyboard</label>
+                                        <input type="text" id="Keyboard_1" name="zip" placeholder="Enter Cast"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">Ram</label>
+                                        <input type="text" id="ram_1" name="state" placeholder="Enter date of birth"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="zip">Rom</label>
+                                        <input type="text" id="rom_1" name="zip" placeholder="Enter relatioinship"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa-sharp fa-solid fa-plus  mt-3 mb-3" onclick="myName()"></i>
+                        </div>
+                        <div class="container text-center" style="border:none;">
+                            <button type="button" class="btn modal_diss_btn" data-bs-toggle="modal"
+                                data-bs-target="#myModal">View</button>
+                        </div>
+                        </form>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- next step for the input  -->
+    <!-- Now add the modal  -->
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Cache-Cloud Employees Gadgets Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container1 mt-3">
+                        <input type="text" id="second_Input" class="form-control" placeholder="Search...">
+                        <table class="table table-striped" id="mine_Table">
+                            <thead>
+                                <tr class="modal-font">
+                                    <th>Date</th>
+                                    <th>Name</th>
+                                    <th>Department</th>
+                                    <th>Sys Manufacturer</th>
+                                    <th>Sys Model</th>
+                                    <th>Monitor</th>
+                                    <th>Headfone</th>
+                                    <th>Mouse</th>
+                                    <th>Keyboard</th>
+                                    <th>Ram</th>
+                                    <th>Rom</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="my_body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn modal_diss_btn" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function myName() {
+            const first_Name = document.getElementById("myFrist_Input").value;
+            const my_ID = document.getElementById("ID_1").value;
+            const my_myDep = document.getElementById("dep_1").value;
+            const my_mySysMan = document.getElementById("sys_Man").value;
+            const my_myModel = document.getElementById("sys_Model").value;
+            const my_myMonitor = document.getElementById("my_Monitor").value;
+            const my_myHead = document.getElementById("myHeadfone").value;
+            const my_myMouse = document.getElementById("mouse_1").value;
+            const my_myKeybord = document.getElementById("Keyboard_1").value;
+            const my_myRam = document.getElementById("ram_1").value;
+            const my_myRom = document.getElementById("rom_1").value;
+
+
+            // const edit_fun = `<span onclick='editFunction()'><i class="fas fa-edit"  class='change_Icon'></i></span>`
+            const btn1112 = ` <i class="fa fa-remove" onclick="this.parentNode.parentNode.style.display='none';" id='my_btn'></i>`
+            my_body.innerHTML = my_body.innerHTML + `
+    
+
+                                        <tr>
+                                        <td ><input type='date' disabled value='${first_Name} class='text-center form-control''></td>
+                                        <td><input type='text'  disabled value='${my_ID}' class='text-center form-control'></td>
+                                        <td><input type='text' disabled value='${my_myDep}' class='text-center form-control'></td>
+                                        <td><input type='text' disabled value='${my_mySysMan}' class='text-center form-control'></td>
+                                        <td><input type='text' disabled value='${my_myModel}' class='text-center form-control'></td>
+                                        <td><input type='text'  disabled value='${my_myMonitor}' class='text-center form-control'></td>
+                                        <td><input type='text' disabled value='${my_myHead}' class='text-center form-control'></td>
+                                        <td><input type='text' disabled value='${my_myMouse}' class='text-center form-control'></td>
+                                        <td><input type='text' disabled value='${my_myKeybord}' class='text-center form-control'></td>
+                                        <td><input type='text' disabled value='${my_myRam}' class='text-center form-control'></td>
+                                        <td><input type='text' disabled value='${my_myRom}' class='text-center form-control'></td>
+                                        <td><button style='border: none;' onclick='editRow(this)'><i class="fas fa-edit"  class='change_Icon'></i></button></td>
+                                        <td> ${btn1112}</td>
+                                    </tr>
+                                   
+                
+                `
+
+        };
+
+
+
+
+
+        // javaScript Search rows in tables function 
+        $(document).ready(function () {
+            $("#second_Input").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#my_body tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+                });
+            });
+        });
+
+        // javaScript logout Functions 
+        // Check if the user is logged in
+if (!localStorage.getItem('userLoggedIn')) {
+    // If not logged in, redirect to login page
+    window.location.href = "./index.html";
+}
+
+function myLogout () {
+    // Remove login state from localStorage
+    localStorage.removeItem('userLoggedIn');
+    // Redirect to login page
+    window.location.href = "./index.html";
+}
+
+        // here from  javaScript edit cells functions for every td
+        function editRow(button) {
+  var row = button.parentNode.parentNode;
+  var inputs = row.querySelectorAll('input');
+  for (var i = 0; i < inputs.length; i++) {
+    
+    inputs[i].disabled = false;
+  }
+
+  button.innerHTML = `<i class='fas fa-check-circle'></i>`
+  button.onclick = function() { saveRow(this); };
+}
+
+function saveRow(button) {
+  var row = button.parentNode.parentNode;
+  var inputs = row.querySelectorAll('input');
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].disabled = true;
+  }
+
+  button.innerHTML = `<i class="fas fa-edit"  class='change_Icon'></i>`;
+  button.onclick = function() { editRow(this); };
+}
+
+
+    </script>
+</body>
+
+</html>

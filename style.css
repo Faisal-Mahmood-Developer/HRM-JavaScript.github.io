@@ -1,0 +1,616 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: none;
+
+}
+
+
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.sidebar a.active:hover {
+  /* background-color: rgb(66, 183, 142); */
+  background-color: #555;
+  color: white;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    text-align: center;
+
+  }
+
+  button.log_out{
+   margin-top: 5%;
+   margin-bottom: 5%;
+   width: 80px;
+   margin-left: 10%;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+  button.modal_diss_btn{
+    width: 90px;
+    background-color: #04AA6D;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .log_out{
+    width: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+
+/* styling for logo */
+
+.logo {
+
+  width: 17%;
+
+}
+
+
+
+
+/* Here css for some files and for input files emp_personal info and Emp_leaves  and others */
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  border: 1px solid lightgrey;
+  padding: 10px 20px 15px 20px;
+  border-radius: 3px;
+}
+
+
+
+
+
+/* input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+} */
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btnA {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    text-align: center;
+
+  }
+  button.log_out{
+   margin-top: 5%;
+   margin-bottom: 5%;
+   width: 100px;
+   margin-left: 10%;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+  button.modal_diss_btn{
+    width: 100px;
+    background-color: #04AA6D;
+    padding: 10px;
+  }
+}
+
+
+
+
+.myImage {
+  width: 10%;
+  position: absolute;
+  /* height: 100px; */
+
+}
+
+.input-container {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/* css for the search bar */
+
+
+.example {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Styling for the forms add_emp and loand  out put values */
+.myInput_Style {
+  width: 60%;
+  height: 45px;
+  /* margin-bottom: 20px; */
+
+  padding: 2px solid rgb(252, 249, 249);
+  border: 2px solid black;
+  background-color: white;
+  /* line-height: 30px; */
+}
+
+
+.myInput_Style1 {
+  width: 70%;
+  height: 40px;
+  /* margin-bottom: 20px; */
+
+  padding: 2px solid rgb(252, 249, 249);
+  border: 2px solid black;
+  background-color: white;
+  /* line-height: 40px; */
+}
+
+
+/* css for the modal header */
+.modal-header {
+  background: #0e4c60;
+  color: white;
+  padding: 30px;
+
+}
+
+/* css for edit , del and logout buttons */
+
+
+.modal_diss_btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px;
+  width: 8%;
+
+}
+
+
+.log_out {
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px;
+  width: 50%;
+
+}
+
+.close_btn {
+  background: #0e4c60;
+  color: white;
+  padding: 8px;
+
+}
+
+/* .mar_log {
+  margin-top: 100%;
+} */
+
+
+
+
+/* css for the footer */
+
+/* Css styling for head cache cloud hrm */
+.cache-cloud {
+  font-size: 30px;
+  border-bottom: 8px solid orangered;
+  border-radius: 20px;
+  width: 25%;
+  justify-content: center;
+}
+
+
+/* styling for attendance sheet for big screen  */
+.my_Sheet {
+  width: 79%;
+  background-color: #f2f2f2;
+  border: 1px solid lightgrey;
+  padding: 10px 20px 15px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-left: 15%;
+
+}
+
+
+
+@media only screen and (max-width: 1536px) {
+  .container {
+    width: 70%;
+    margin-left: 18.5%;
+    margin-bottom: 5%;
+  }
+
+  .cache-cloud {
+    font-size: 20px;
+    border-bottom: 7px solid orangered;
+    border-radius: 20px;
+    width: 20%;
+
+
+  }
+
+  .my_Sheet {
+    width: 82%;
+    background-color: #f2f2f2;
+    border: 1px solid lightgrey;
+    padding: 10px 20px 15px 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-left: 15%;
+
+
+  }
+
+  /* css for buttons */
+  .modal_diss_btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px;
+    width: 15%;
+    margin-right: 10%;
+  }
+
+  .mar_log {
+    margin-top: auto;
+  }
+  .log_out{
+    margin-right: 10%;
+  }
+
+}
+
+.dropdown-toggle:after {
+  display: none;
+
+}
+
+
+
+/* css for the clock  */
+
+
+.clock {
+  width: 180px;
+  height: 180px;
+  /* background-color: rgba(255, 255, 255, .8); */
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+
+
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 1.5rem;
+}
+
+.clock .number1 {
+  --rotation: 30deg;
+}
+
+.clock .number2 {
+  --rotation: 60deg;
+}
+
+.clock .number3 {
+  --rotation: 90deg;
+}
+
+.clock .number4 {
+  --rotation: 120deg;
+}
+
+.clock .number5 {
+  --rotation: 150deg;
+}
+
+.clock .number6 {
+  --rotation: 180deg;
+}
+
+.clock .number7 {
+  --rotation: 210deg;
+}
+
+.clock .number8 {
+  --rotation: 240deg;
+}
+
+.clock .number9 {
+  --rotation: 270deg;
+}
+
+.clock .number10 {
+  --rotation: 300deg;
+}
+
+.clock .number11 {
+  --rotation: 330deg;
+}
+
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.clock .hand.second {
+  width: 4px;
+  height: 45%;
+  background-color: red;
+}
+
+.clock .hand.minute {
+  width: 6px;
+  height: 40%;
+  background-color: black;
+}
+
+.clock .hand.hour {
+  width: 8px;
+  height: 35%;
+  background-color: black;
+}
+
+
+
+/* css for image and qr code in the modal of emp_personal_Information  */
+.display1,
+.display2 {
+  border: 2px solid black;
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+}
+
+
+
+
+/* css  for Cache cloud Employees Gadgets Details in modal input  */
+#replace {
+  height: 12px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.modal-font {
+  font-size: 13px;
+}
+
+.date_input {
+  height: 12px;
+  font-size: 12px;
+
+}

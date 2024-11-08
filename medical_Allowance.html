@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>Medical Allowances</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div style="padding: 14% ">
+      <img src="./images/cache-cloudFont334.png" style="width: 90%;">
+    </div>
+    <!-- <i class="fa fa-fw fa-home"></i> -->
+    <a class="active" href="./home.html">Home</a>
+    <a href="./Emp_About.html">About</a>
+
+    <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Departments </a>
+    <li class="dropdown-menu">
+      <a class="dropdown-item" href="">Administration</a>
+      <a class="dropdown-item" href="./soft_dep.html">Software Department</a>
+      <a class="dropdown-item" href="./qa_dep.html">QA Department</a>
+      <a class="dropdown-item" href="./oracle_data.html">DB Department</a>
+      <a class="dropdown-item" href="./devOps.html">DevOps Department</a>
+    </li>
+
+
+    <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">CC Employees </a>
+    <li class="dropdown-menu">
+      <a class="dropdown-item" href="./emp_personal_Information.html">Add Emp Data</a>
+      <a class="dropdown-item" href="./Employees.html">Emp Info</a>
+      <a class="dropdown-item" href="./Emp_Cards.html">Emp Cards</a>
+    </li>
+    <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Payroll System </a>
+    <li class="dropdown-menu">
+      <a class="dropdown-item" href="https://alfalahtransact.bankalfalah.com/SSO_FW/MasterPage/Home.aspx">Transation</a>
+      <a class="dropdown-item" href="./salary.html">Salary Slips</a>
+      <a class="dropdown-item" href="./medical_Allowance.html">Medical Allowance</a>
+      <a class="dropdown-item" href="./advance_loan.html">Advance Loan</a>
+      <a class="dropdown-item" href="./myCaal.html">Calculate</a>
+    </li>
+    <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Leaves Chart </a>
+    <li class="dropdown-menu">
+      <a class="dropdown-item" href="./CC Attendance.html">Attendence Sheet</a>
+      <a class="dropdown-item" href="./Emp_leaves.html">Leaves</a>
+    </li>
+    <a href class="btn  dropdown-toggle" data-bs-toggle="dropdown">Office Glossary </a>
+    <li class="dropdown-menu">
+      <a class="dropdown-item" href="./expenses.html">Office Empenses</a>
+      <a class="dropdown-item" href="./Accessories.html">Office Accessories</a>
+      <a class="dropdown-item" href=""></a>
+      <a class="dropdown-item" href=""></a>
+      <!-- <hr style="border-bottom: 2px orange;"> -->
+    </li>
+    <a href="#">Emails</a>
+    <!-- <a href="#">CC Academy</a> -->
+    <a href="">Entertainment</a>
+
+    <div class="mar_log text-center ">
+      <button type="button" class="btn log_out " onclick="myLogout()">Logout</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container bg-white" style="border: none;">
+    <h1 class="text-center cache-cloud">CACHE CLOUD HRM</h1>
+    <br>
+    <p>Director</p>
+    <p>Ali Bajwa</p>
+    <p>HR</p>
+    <p>Faisal Mahmood</p>
+  </div>
+  <div class="container mt-3 ">
+    <h2 class="text-center mt-5">Medical Allowances</h2>
+    <h4 class="text-center">Medical Allowances For Married</h4>
+    <form class="mt-5 mb-3">
+      <!-- first row  -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-md-4">
+          <label> Date:</label>
+          <input type="date" class="form-control m_files" id="date" placeholder="Enter Date">
+        </div>
+        <div class="col-md-4">
+          <label> Name:</label>
+          <input type="text" class="form-control " id="name" placeholder="Enter Name"><br>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <!-- second row  -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-md-4">
+          <label> Month:</label>
+          <input type="number" class="form-control m_files" id="Month" placeholder="Enter Month">
+        </div>
+        <div class="col-md-4">
+          <label> Amount:</label>
+          <input type="number" class="form-control m_files" id="amount" placeholder="Enter Amount"><br>
+        </div>
+        <div class="col"></div>
+      </div>
+    </form>
+    <div class="text-center">
+      <i class="fa-sharp fa-solid fa-plus" onclick="myFunction()"></i>
+    </div>
+    <br>
+    <div class="container text-center" style="border: none;">
+
+      <button type="button" class="btn modal_diss_btn" data-bs-toggle="modal" data-bs-target="#myModal">View</button>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Medical Allowances For Married</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <input type="text" id="search_box" class="form-control" placeholder="Search...">
+          <table class="table table-hover text-center" id="mine_Table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Month</th>
+                <th>Amount</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="myTask12">
+              <tr>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn close_btn me-5" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+
+
+
+
+
+
+
+  <!-- Second form for Unmarried -->
+
+  <div class="container mt-5 mb-5">
+    <h4 class="text-center mt-5">Medical Allowances For Unmarried</h4>
+    <form class="mt-5 mb-3">
+      <!-- first row  -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-md-4">
+          <label> Date:</label>
+          <input type="date" class="form-control m_files" id="date1" placeholder="Enter Date" required>
+        </div>
+        <div class="col-md-4">
+          <label> Name:</label>
+          <input type="text" class="form-control " id="name1" placeholder="Enter Name"><br>
+        </div>
+        <div class="col"></div>
+      </div>
+      <!-- second row  -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-md-4">
+          <label> Month:</label>
+          <input type="month" class="form-control m_files" id="Month1" placeholder="Enter Month" required>
+        </div>
+        <div class="col-md-4">
+          <label> Amount:</label>
+          <input type="number" class="form-control m_files" id="amount1" placeholder="Enter Amount" required>
+        </div>
+        <div class="col"></div>
+      </div>
+
+
+    </form>
+    <div class="text-center">
+      <i class="fa-sharp fa-solid fa-plus" onclick="myButton()"></i>
+    </div>
+    <br>
+    <div class="container text-center" style="border: none;">
+
+      <button type="button" class="btn modal_diss_btn" data-bs-toggle="modal" data-bs-target="#myModal11">View</button>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal11">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Medical Allowances For Unmarried</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <input type="text" id="my_Demo" placeholder="Search...">
+          <table class="table table-hover text-center" id="ourTable">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Month</th>
+                <th>Amount</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="my_Input">
+              <tr>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn close_btn me-5" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- JavaScript starting  -->
+  <script>
+
+    // second unmarried javascript 
+
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("my_Demo");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("mine_Table");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+
+//     function myButton() {
+//       const emp_name = document.getElementById('date1').value;
+//       const emp_id = document.getElementById('name1').value;
+//       const emp_des = document.getElementById('Month1').value;
+//       const emp_det = document.getElementById('amount1').value;
+//       const button = ` <i class="fa fa-remove " onclick="deleteRow(this)"></i>`
+//       const edit_btn = `<i class='fas fa-edit' onclick='editRow()'></i>`
+//       my_Input.innerHTML = my_Input.innerHTML +
+//         `
+//         <td>${emp_name}</td>
+//         <td>${emp_id}</td>
+//         <td>${emp_des}</td>
+//         <td>${emp_det}</td>
+//         <td>${edit_btn}</td>
+//         <td class='text-center'>${button}</td>
+      
+// `
+//     }
+
+
+
+
+
+    const products_AA = [];
+
+function myButton() {
+
+      const emp_name = document.getElementById('date1').value;
+      const emp_id = document.getElementById('name1').value;
+      const emp_des = document.getElementById('Month1').value;
+      const emp_det = document.getElementById('amount1').value;
+ 
+
+  let product_Emp = {
+    product_Name: emp_name,
+    product_id: emp_id,
+    product_Des: emp_des,
+    product_Det: emp_det
+  }
+
+  products_AA.push(product_Emp);
+  refresh_emp();
+};
+
+function refresh_emp() {
+  const table_input = document.getElementById('my_Input');
+  const del_btn = ` <i class="fa fa-remove " onclick="rem_function(this.parentNode.parentNode)"></i>`;
+
+  table_input.innerHTML = '';
+
+  for (Atom in products_AA) {
+
+    let arr_Emp = products_AA[Atom];
+
+    table_input.innerHTML = table_input.innerHTML + `<tr id = 'product_1${Atom}'>
+                                                <td><input id = 'date_1${Atom}' type='date' disabled value='${arr_Emp.product_Name}' class='text-center'/></td>
+                                                <td><input id = 'name_1${Atom}' disabled value='${arr_Emp.product_id}' class='text-center'/></td>
+                                                <td><input id = 'unit_1${Atom}' disabled value='${arr_Emp.product_Des}'class='text-center' /></td>
+                                                <td><input id = 'qty_1${Atom}' disabled value='${arr_Emp.product_Det}'class='text-center' /></td>
+                                                <td id='edit_1${Atom}'><i class="fas fa-edit" onclick='editRow1(${Atom})'></i></td>
+                                                <td>${del_btn}</td>
+                                              </tr>`;
+  }
+
+};
+
+
+
+
+function rem_function(e){
+e.remove();
+};
+function editRow1(tr_emp){
+
+let editId1 = 'edit_1'+tr_emp;
+
+$('#'+editId1).html(`<i class='fas fa-check-circle' onclick='updateRow1(${tr_emp})'></i>`)
+
+let selectedRow1 = $('#product_1'+tr_emp+' input');
+
+selectedRow1.prop('disabled', false);
+
+}
+
+function updateRow1(product_id1){
+let editId1 = 'edit_1'+product_id1;
+let emp_name = $('#date_1'+product_id1).val();
+let emp_id = $('#name_1'+product_id1).val();
+let emp_des = $('#unit_1'+product_id1).val();
+let emp_det = $('#qty_1'+product_id1).val();
+
+let selectedRow1 = $('#product_1'+product_id1+' input');
+
+
+products_AA[product_id1] = {
+  product_Name: emp_name,
+    product_id: emp_id,
+    product_Des: emp_des,
+    product_Det: emp_det
+}
+
+$('#'+editId1).html(`<i class='fas fa-edit' onclick='editRow(${product_id1})'></i>`);
+selectedRow1.prop('disabled', true);
+refresh_emp();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // function deleteRow(row) {
+    //   var d = row.parentNode.parentNode.rowIndex;
+    //   document.getElementById('ourTable').deleteRow(d);
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // first medical allowance for married javascript
+
+    //     function myFunction() {
+    //       const MyDate = document.getElementById('date').value;
+    //       const myName = document.getElementById('name').value;
+    //       const myMonth = document.getElementById('Month').value;
+    //       const myAmount = document.getElementById('amount').value;
+    //       const edit_btn2 = `<i class='fas fa-edit' onclick='editRow()'></i>`
+    //       const btn111 = ` <i class="fa fa-remove " onclick="(this.parentNode.parentNode.style.display='none')"></i>`
+
+    //       myTask12.innerHTML = myTask12.innerHTML +
+    //         `
+    //         <td>${MyDate}</td>
+    //         <td>${myName}</td>
+    //         <td>${myMonth}</td>
+    //         <td>${myAmount}</td>
+    //         <td>${edit_btn2}</td>
+    //         <td class='text-center'>${btn111}</td>
+
+    // `
+    //     }
+
+
+
+
+
+// second method 
+    const products_arr = [];
+
+    function myFunction() {
+
+      const My_Date = document.getElementById('date').value;
+      const my_Name = document.getElementById('name').value;
+      const my_Month = document.getElementById('Month').value;
+      const my_Amount = document.getElementById('amount').value;
+     
+
+      let product_object = {
+        product_date: My_Date,
+        product_name: my_Name,
+        product_unit_price: my_Month,
+        product_quantity: my_Amount
+      }
+
+      products_arr.push(product_object);
+      refresh_products();
+    };
+
+
+
+    function refresh_products() {
+
+      const table_data = document.getElementById('myTask12');
+
+
+      const delete_btn = ` <i class="fa fa-remove " onclick="rem_fun(this.parentNode.parentNode)"></i>`;
+
+      table_data.innerHTML = '';
+
+      for (item in products_arr) {
+
+        let arr_item = products_arr[item];
+
+        table_data.innerHTML = table_data.innerHTML + `<tr id = 'product_${item}'>
+                                                    <td><input id = 'date_${item}' type='date' disabled value='${arr_item.product_date}' class='text-center'/></td>
+                                                    <td><input id = 'name_${item}' disabled value='${arr_item.product_name}' class='text-center'/></td>
+                                                    <td><input id = 'unit_${item}' disabled value='${arr_item.product_unit_price}'class='text-center' /></td>
+                                                    <td><input id = 'qty_${item}' disabled value='${arr_item.product_quantity}'class='text-center' /></td>
+                                                    <td id='edit_${item}'><i class="fas fa-edit" onclick='editRow(${item})'></i></td>
+                                                    <td>${delete_btn}</td>
+                                                  </tr>`;
+      }
+
+    };
+
+
+
+
+function rem_fun(e){
+e.remove();
+};
+    function editRow(tr_id){
+
+let editId = 'edit_'+tr_id;
+
+$('#'+editId).html(`<i class='fas fa-check-circle' onclick='updateRow(${tr_id})'></i>`)
+
+let selectedRow = $('#product_'+tr_id+' input');
+
+selectedRow.prop('disabled', false);
+
+}
+
+function updateRow(product_id){
+let editId = 'edit_'+product_id;
+let My_Date = $('#date_'+product_id).val();
+let my_Name = $('#name_'+product_id).val();
+let my_Month = $('#unit_'+product_id).val();
+let my_Amount = $('#qty_'+product_id).val();
+
+let selectedRow = $('#product_'+product_id+' input');
+
+
+products_arr[product_id] = {
+  product_date: My_Date,
+  product_name: my_Name,
+  product_unit_price: my_Month,
+  product_quantity: my_Amount
+}
+
+$('#'+editId).html(`<i class='fas fa-edit' onclick='editRow(${product_id})'></i>`);
+selectedRow.prop('disabled', true);
+refresh_products();
+
+}
+
+
+
+
+
+
+
+
+
+    //  function my_Problem(row) {
+    //     var x = row.parentNode.parentNode.rowIndex;
+    //     document.getElementById('mine_Table').my_Problem(x);
+    //   }
+
+    // javascript for logout function
+    // Check if the user is logged in
+if (!localStorage.getItem('userLoggedIn')) {
+    // If not logged in, redirect to login page
+    window.location.href = "./index.html";
+}
+
+function myLogout () {
+    // Remove login state from localStorage
+    localStorage.removeItem('userLoggedIn');
+    // Redirect to login page
+    window.location.href = "./index.html";
+}
+    // javaScirp search functin 
+    $(document).ready(function () {
+      $("#search_box").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myTask12 tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>

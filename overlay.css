@@ -1,0 +1,55 @@
+/* css for the first image  */
+.container111 {
+    position: relative;
+    width: 80%;
+
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1113125a;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container111:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: yellow;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .myPara{
+    color: white;
+    font-size: 18px;
+  }
+
+
+/* for the images zoom in */
+/* .card  {
+    
+    transition: 0.5s all ease-in-out;
+}
+
+.card:hover  {
+    transform: scale(0.95);
+} */
